@@ -80,25 +80,23 @@ nav {
     color: white;
 }
 
-.individual-post{
-    margin: 10px 10px;
+/*HOMEPAGE STARTS*/
+.post-wrapper{
+    padding: 10px;
 }
 
-/*HOMEPAGE POSTS STARTS*/
-/* .post-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: flex-start;
-}
-
-article.post {
+.post {
     background: var(--secondary-color);
-    margin: 12px;
-    width: 20%;
-} */
+}
+
+.credentials{
+    border-top: solid rgb(93, 93, 93) 1px;
+    padding-top: 3px;
+}
+
+.fa-heart{
+    color: red;
+}
 /*HOMEPAGE POSTS END*/
 
 /*LOGIN STARTS*/

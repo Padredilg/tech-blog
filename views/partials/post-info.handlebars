@@ -1,13 +1,20 @@
-<article class="post">
-    <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="title">
-            <p>{{title}}</p>
-            <p>({{content}})</p>
+<article class="post-wrapper col-xl-3 col-lg-4 col-md-6 col-sm-12">
+    <div class="card post">
+
+        <div class="card-header card-title">
+            {{title}}
         </div>
-        <div class="meta">
-            by {{user.username}} on {{format_date created_at}}
-            |
-            <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+
+        <div class="card-body">
+            <p class="card-text">{{content}}</p>
+            
+
+            <div class="card-text credentials">
+                by {{user.username}} on {{format_date created_at}}</br>
+                <i class="fas fa-heart"></i> 0   
+                |
+                <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+            </div>
         </div>
     </div>
 </article>
