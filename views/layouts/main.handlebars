@@ -13,10 +13,10 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1 id="home-button" class="home"> <a href="/">Tech Blog</a> </h1>
+      <h1 class="home"> <a id="home-button" href="/">Tech Blog</a> </h1>
       <nav>
         <div class="nav-section">
-          {{!-- dashboard should only be an option when loggedIn --}}
+          <a class="link-button" href="/">Home</a>
           {{#if loggedIn}}
           <a class="link-button" href="/dashboard">dashboard</a>
           {{/if}}

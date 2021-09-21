@@ -67,11 +67,41 @@ nav {
 }
 
 #home-button{
-    margin: 10px 15px;
+    padding: 0 40px;
+    border-radius: 0 75px 0px 45px;
     font-family: 'Train One';
+    font-size: 3.25rem;
     color: var(--primary-color);
+    transition: all .25s ease-in-out;
 }
 
+#home-button:hover{
+    background-color:var(--primary-color);
+    color: white;
+}
+
+.individual-post{
+    margin: 10px 10px;
+}
+
+/*HOMEPAGE POSTS STARTS*/
+/* .post-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-start;
+}
+
+article.post {
+    background: var(--secondary-color);
+    margin: 12px;
+    width: 20%;
+} */
+/*HOMEPAGE POSTS END*/
+
+/*LOGIN STARTS*/
 #forms-section {
     display: flex;
     flex-direction: row;
@@ -93,7 +123,7 @@ nav {
     border-bottom: 1px solid rgba(0,0,0,.125);
     color: white;
 }
-
+/* LOGIN ENDS */
 footer {
     position: fixed;
     bottom: 0;

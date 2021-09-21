@@ -1,9 +1,8 @@
 {{!-- This Page must show all posts --}}
-<ol class="post-list">
-    {{#each posts as |post|}}
-    <li>
+<div class="post-list container">
+    <div class="row">
+        {{#each posts as |post|}}
         {{> post-info post }}
-        Posts
-    </li>
-    {{/each}}
-</ol>
+        {{/each}}
+    </div>
+</div>
