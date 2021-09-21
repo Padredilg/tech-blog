@@ -5,21 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
 </head>
 
 <body>
   <div class="wrapper">
     <header>
-      <h1>
-        <a href="/">Just Tech News</a>
-      </h1>
+      <h1 id="home-button" class="home"> <a href="/">Tech Blog</a> </h1>
       <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
+        {{!-- need two divs: left --> home(title),dashboard , and  right --> login/logout --}}
+        <div class="nav-section">
+          {{!-- dashboard should only be an option when loggedIn --}}
+          <a class="link-button" href="/dashboard">dashboard</a>
+        </div>
+        <div class="nav-section">
+          {{!-- {{#if loggedIn}} --}}
+          <a id="logout"  href="/" class="link-button">logout</a>
+          {{!-- {{else}} --}}
+          <a class="link-button" href="/login">login</a>
+          {{!-- {{/if}} --}}
+        </div>
       </nav>
     </header>
     <main>
