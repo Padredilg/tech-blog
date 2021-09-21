@@ -1,6 +1,6 @@
 :root{
-    --primary-color: steelblue;
-    --secondary-color: aliceblue;
+    --primary-color: darkcyan;
+    --secondary-color: floralwhite;
 }
 
 *{
@@ -14,6 +14,10 @@ li{
 }
 
 a{
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: none;
 }
 
@@ -64,6 +68,8 @@ nav {
 
 #home-button{
     margin: 10px 15px;
+    font-family: 'Train One';
+    color: var(--primary-color);
 }
 
 #forms-section {
