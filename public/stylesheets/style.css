@@ -37,6 +37,10 @@ html{
     scroll-behavior: smooth;
 }
 
+main {
+    margin: 0 0 50px 0;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -81,10 +85,10 @@ nav {
 }
 
 
-
 /*HOMEPAGE STARTS*/
 .post-wrapper{
     padding: 10px;
+    margin: 0 auto;
 }
 
 .post {
@@ -99,8 +103,7 @@ nav {
 .fa-heart{
     color: red;
 }
-/*HOMEPAGE POSTS END*/
-
+/*HOMEPAGE ENDS*/
 
 
 /*LOGIN STARTS*/
@@ -127,6 +130,7 @@ nav {
 }
 /* LOGIN ENDS */
 
+
 /* DASHBOARD BEGINS */
 .welcome {
     padding: 12px 0 0 15px;
@@ -142,9 +146,26 @@ nav {
     align-items: center;
     flex-wrap: nowrap;
 }
-
-
 /* DASHBOARD ENDS */
+
+
+/* COMMENTS BEGIN */
+.comment {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+  
+.comment:nth-child(odd) {
+    background-color: var(--secondary-color);
+}
+  
+.comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+}
+/* COMMENTS ENDS */
+
 
 footer {
     position: fixed;

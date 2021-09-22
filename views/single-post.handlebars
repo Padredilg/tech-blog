@@ -1,5 +1,22 @@
-{{!-- This generates the post title heading --}}
-{{> post-info post}}
+<article class="post-wrapper col-md-8 col-sm-10">
+    <div class="card post">
+        <div class="card-header card-title">
+            {{post.title}}
+        </div>
+
+        <div class="card-body">
+            <p class="card-text">{{post.content}}</p>
+            
+
+            <div class="card-text credentials">
+                by {{post.user.username}} on {{format_date post.created_at}}</br>
+                <i class="fas fa-heart"></i> {{post.vote_count}}   
+                |
+                <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+            </div>
+        </div>
+    </div>
+</article>
 
 {{#if loggedIn}}
 <form class="comment-form">
