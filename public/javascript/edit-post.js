@@ -6,11 +6,15 @@ async function editFormHandler(event) {
     ];
     //title is the value in the input box with id title-name
     const title = document.getElementById('title-name').value;
+    const content = document.querySelector('textarea[name="post-content"]').value;
+
+
 
     const response = await fetch(`/api/posts/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
-            title
+            title,
+            content
         }),
         headers: {
             'Content-Type': 'application/json'
@@ -24,5 +28,10 @@ async function editFormHandler(event) {
         alert(response.statusText);
     }
 }
+
+function goBack(){
+    window.history.back();
+}
   
 document.querySelector('.edit-post-form').addEventListener('submit', editFormHandler);
+document.querySelector('.back').addEventListener('click', goBack);

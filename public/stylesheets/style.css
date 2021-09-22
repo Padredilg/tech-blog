@@ -117,8 +117,12 @@ nav {
 }
 
 .fa-edit {
-    color: var(--secondary-color);
+    color: white;
     margin: -3px -7px 0 15px;
+}
+
+.fa-edit:hover{
+    color: aqua;
 }
 
 .like-btn{
@@ -221,8 +225,16 @@ nav {
 /* COMMENTS ENDS */
 
 /* EDIT-POST BEGINS */
+.back{
+    margin: 10px 0 0 10px;
+}
+
 .edit-buttons{
     margin-top: 10px;
+}
+
+.content-box{
+    height: 170px;
 }
 /* EDIT-POST ENDS */
 
