@@ -7,7 +7,6 @@
         <div class="card-body">
             <p class="card-text">{{content}}</p>
             
-
             <div class="card-text credentials">
                 by {{user.username}} on {{format_date created_at}}</br>
                 <i class="fas fa-heart"></i> {{vote_count}}   
@@ -16,8 +15,8 @@
             </div>
         </div>
     </div>
-    {{!-- {{#if belongs to user}} --}}
+    {{#if edit}} 
     <a href="/dashboard/edit/{{id}}" class="edit-link btn btn-info">Edit post</a>
-    {{!-- {{/if}} --}}
+    {{/if}}
 
 </article>

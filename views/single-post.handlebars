@@ -13,6 +13,9 @@
         </div>
     </div>
     <i class="fas fa-heart"></i> {{post.vote_count}} <button type="button" class="like-btn btn btn-danger">Like</button>
+    {{#if post.edit}} 
+    <a href="/dashboard/edit/{{post.id}}" class="edit-link btn btn-info">Edit post</a>
+    {{/if}}
 </article>
 
 <div class="container">

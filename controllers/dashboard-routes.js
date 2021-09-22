@@ -14,6 +14,7 @@ router.get('/', withAuth, (req, res) => {
             'content',
             'title',
             'created_at',
+            'user_id',
             [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
         ],
         include: [
@@ -34,8 +35,22 @@ router.get('/', withAuth, (req, res) => {
         .then(dbPostData => {
             console.log(req.session);
             // serialize data before passing to template
-            const posts = dbPostData.map(post => post.get({ plain: true }));
-            res.render('dashboard', { posts, loggedIn: true });
+            const posts = dbPostData.map(post => {
+                post = post.get({ plain: true })
+                if(post.user_id === req.session.user_id){
+                    post.edit = true;
+                }
+                else{
+                    post.edit = false;
+                }
+                console.log(post)
+                return post;
+            });
+            
+            res.render('dashboard', { 
+                posts, 
+                loggedIn: true 
+            });
         })
         .catch(err => {
             console.log(err);
