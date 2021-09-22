@@ -80,6 +80,8 @@ nav {
     color: white;
 }
 
+
+
 /*HOMEPAGE STARTS*/
 .post-wrapper{
     padding: 10px;
@@ -98,6 +100,8 @@ nav {
     color: red;
 }
 /*HOMEPAGE POSTS END*/
+
+
 
 /*LOGIN STARTS*/
 #forms-section {
@@ -122,6 +126,26 @@ nav {
     color: white;
 }
 /* LOGIN ENDS */
+
+/* DASHBOARD BEGINS */
+.welcome {
+    padding: 12px 0 0 15px;
+}
+
+.new-post-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 30px 50px;
+    background: var(--secondary-color);
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+/* DASHBOARD ENDS */
+
 footer {
     position: fixed;
     bottom: 0;
