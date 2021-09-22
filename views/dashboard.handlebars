@@ -2,10 +2,13 @@
 
 <section class="new-post-form">
   <form class="card w-75">
+
     <div class="card-header correct-colors">
         Create new Post
     </div>
+    
     <div class="card-body">
+
       <div class="form-group">
         <label for="post-title">Title</label>
         <input class="form-control" placeholder="Title" type="text" id="post-title" name="post-title" />
@@ -17,13 +20,15 @@
       </div>
 
       <button type="submit" class="btn btn-primary">Create</button>
+      
     </div>
+
   </form>
 </section>
 
 {{#if posts.length}}
 <section>
-  <h2 class="section-title">Your Posts</h2>
+  <h2 class="section-title">Your Posts:</h2>
 
   <div class="container">
       <div class="row">

@@ -84,6 +84,10 @@ nav {
     color: white;
 }
 
+.fa-home, .fa-user-alt, .fa-sign-out-alt, .fa-sign-in-alt{
+    color: white;
+}
+
 
 /*POSTS STARTS*/
 .post-wrapper{
@@ -96,6 +100,13 @@ nav {
     margin: 0 0 5px 0;
 }
 
+.separate-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .credentials{
     border-top: solid rgb(93, 93, 93) 1px;
     padding-top: 3px;
@@ -103,6 +114,11 @@ nav {
 
 .fa-heart{
     color: red;
+}
+
+.fa-edit {
+    color: var(--secondary-color);
+    margin: -3px -7px 0 15px;
 }
 
 .like-btn{
@@ -204,6 +220,11 @@ nav {
 }
 /* COMMENTS ENDS */
 
+/* EDIT-POST BEGINS */
+.edit-buttons{
+    margin-top: 10px;
+}
+/* EDIT-POST ENDS */
 
 footer {
     position: fixed;

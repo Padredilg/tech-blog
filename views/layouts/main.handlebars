@@ -17,16 +17,16 @@
       <h1 class="home"> <a id="home-button" href="/"># Tech Blog</a> </h1>
       <nav>
         <div class="nav-section">
-          <a class="link-button" href="/">Home</a>
+          <a class="link-button" href="/"> <i class="fas fa-home"></i> Home</a>
           {{#if loggedIn}}
-          <a class="link-button" href="/dashboard">dashboard</a>
+          <a class="link-button" href="/dashboard"> <i class="fas fa-user-alt"></i> Dashboard</a>
           {{/if}}
         </div>
         <div class="nav-section">
           {{#if loggedIn}}
-          <a id="logout"  href="/" class="link-button">logout</a>
+          <a id="logout"  href="/" class="link-button">logout <i class="fas fa-sign-out-alt"></i> </a>
           {{else}}
-          <a class="link-button" href="/login">login</a>
+          <a class="link-button" href="/login"> <i class="fas fa-sign-in-alt"></i> login</a>
           {{/if}}
         </div>
       </nav>
