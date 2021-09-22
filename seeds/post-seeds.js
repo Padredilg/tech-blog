@@ -2,103 +2,103 @@ const { Post } = require('../models');
 
 const postdata = [
   {
-    title: 'This is the title: Donec posuere metus vitae ipsum.',
-    content: 'This is the content: om/in/imperdiet/et/commodo/vulputate.png',
+    title: 'Donec posuere metus vitae ipsum.',
+    content: 'This is content!',
     user_id: 10
   },
   {
-    title: 'This is the title: Morbi non quam nec dui luctus rutrum.',
-    content: 'This is the content: onec.json',
+    title: 'Morbi non quam nec dui luctus rutrum.',
+    content: 'This is content!',
     user_id: 8
   },
   {
-    title: 'This is the title: Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-    content: 'This is the content: parturient/montes/nascetur/ridiculus/mus/etiam/vel.aspx',
+    title: 'Donec diam nequputate ut, ultrices vel, augue.',
+    content: 'This is content!',
     user_id: 1
   },
   {
-    title: 'This is the title: Nunc purus.',
-    content: 'This is the content: nim/blandit/mi.jpg',
+    title: 'Nunc purus.',
+    content: 'This is content!',
     user_id: 4
   },
   {
-    title: 'This is the title: Pellentesque eget nunc.',
-    content: 'This is the content: am/nulla/integer.aspx',
+    title: 'Pellentesque eget nunc.',
+    content: 'This is content!',
     user_id: 7
   },
   {
-    title: 'This is the title: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    content: 'This is the content: du/consequat.png',
+    title: 'Lorem ipsum doltuer adipiscing elit.',
+    content: 'This is content!',
     user_id: 4
   },
   {
-    title: 'This is the title: In hac habitasse platea dictumst.',
-    content: 'This is the content: g/non/ligula/pellentesque.js',
+    title: 'In hac habitasse platea dictumst.',
+    content: 'This is content!',
     user_id: 1
   },
   {
-    title: 'This is the title: Morbi non quam nec dui luctus rutrum.',
-    content: 'This is the content: nsequat/nulla.html',
+    title: 'Morbi non quam nec dui luctus rutrum.',
+    content: 'This is content!',
     user_id: 1
   },
   {
-    title: 'This is the title: Duis ac nibh.',
-    content: 'This is the content: .com/dui/vel/nisl/duis/ac/nibh.aspx',
+    title: 'Duis ac nibh.',
+    content: 'This is content!',
     user_id: 9
   },
   {
-    title: 'This is the title: Curabitur at ipsum ac tellus semper interdum.',
-    content: 'This is the content: on.com/ligula/sit.jpg',
+    title: 'Curabitur atmper interdum.',
+    content: 'This is content!',
     user_id: 5
   },
   {
-    title: 'This is the title: In hac habitasse platea dictumst.',
-    content: 'This is the content: n/lectus/vestibulum.json',
+    title: 'In hac habitasse platea dictumst.',
+    content: 'This is content!',
     user_id: 3
   },
   {
-    title: 'This is the title: Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
-    content: 'This is the content: tions.com/nam/ultrices/libero/non/mattis/pulvinar.json',
+    title: 'Morbi odio odio, elementum euin, leo.',
+    content: 'This is content!',
     user_id: 10
   },
   {
-    title: 'This is the title: Donec dapibus.',
-    content: 'This is the content: com/ac/neque/duis/bibendum/morbi/non.xml',
+    title: 'Donec dapibus.',
+    content: 'This is content!',
     user_id: 8
   },
   {
-    title: 'This is the title: Nulla tellus.',
-    content: 'This is the content: natoque/penatibus/et.html',
+    title: 'Nulla tellus.',
+    content: 'This is content!',
     user_id: 3
   },
   {
-    title: 'This is the title: Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.',
-    content: 'This is the content: orem.jpg',
+    title: 'Cras mi pede, malesuada in, imperdi, justo.',
+    content: 'This is content!',
     user_id: 3
   },
   {
-    title: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.',
-   content: ' This is the content: le.it/mattis/egestas.jsp',
+    title: 'This is Title!',
+    content: 'This is content!',
     user_id: 7
   },
   {
-    title: 'This is the title: In hac habitasse platea dictumst.',
-    content: 'This is the content: urpis/eget.jpg',
+    title: 'In hac habitasse platea dictumst.',
+    content: 'This is content!',
     user_id: 6
   },
   {
-    title: 'This is the title: Etiam justo.',
-    content: 'This is the content: .com/quis.json',
+    title: 'Etiam justo.',
+    content: 'This is content!',
     user_id: 4
   },
   {
-    title: 'This is the title: Nulla ut erat id mauris vulputate elementum.',
-    content: 'This is the content: am/neque/vestibulum/eget/vulputate/ut/ultrices.png',
+    title: 'Nulla ut erat id mauris v.',
+    content: 'This is content!',
     user_id: 6
   },
   {
-    title: 'This is the title: Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',
-    content: 'This is the content: t/nibh/in.png',
+    title: 'Integer pede justo, lacinia e',
+    content: 'This is content!',
     user_id: 7
   }
 ];
