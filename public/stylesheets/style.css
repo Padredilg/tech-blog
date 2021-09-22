@@ -137,7 +137,7 @@ nav {
 
 
 /* DASHBOARD BEGINS */
-.welcome {
+.section-title {
     padding: 12px 0 0 15px;
 }
 
@@ -150,6 +150,14 @@ nav {
     background: var(--secondary-color);
     align-items: center;
     flex-wrap: nowrap;
+}
+
+.row-elem{
+    width: 100%;
+}
+
+.edit-btn-wrapper{
+    width: 100%;
 }
 /* DASHBOARD ENDS */
 
