@@ -4,27 +4,45 @@ const sequelize = require('../config/connection');
 // create our Post model
 class Post extends Model {
   static upvote(body, models) {
-    return models.Vote.create({
-      user_id: body.user_id,
-      post_id: body.post_id
-    }).then(() => {
-      return Post.findOne({
+    return models.Vote.findOne({
         where: {
-          id: body.post_id
-        },
-        attributes: [
-          'id',
-          'content',
-          'title',
-          'created_at',
-          [
-            sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'),
-            'vote_count'
-          ]
-        ]
-      });
+            user_id: body.user_id,
+            post_id: body.post_id
+        }
+    }).then(foundVote => {
+        if (foundVote) {
+            // If the vote was found, destroy it - "unlike"
+            return models.Vote.destroy({
+                where: {
+                    user_id: body.user_id,
+                    post_id: body.post_id
+                }
+            });
+        } else {
+            // If the vote was not found, create a new vote - "like"
+            return models.Vote.create({
+                user_id: body.user_id,
+                post_id: body.post_id
+            });
+        }
+    }).then(() => {
+        return Post.findOne({
+            where: {
+                id: body.post_id
+            },
+            attributes: [
+                "id",
+                "content",
+                "title",
+                "created_at",
+                [
+                    sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'),
+                    "vote_count"
+                ]
+            ]
+        });
     });
-  }
+}
 }
 
 Post.init(

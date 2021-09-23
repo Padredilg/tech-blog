@@ -16,7 +16,9 @@
     <header>
       <div class="separate-items">
         <h1 class="home"> <a id="home-button" href="/"># Tech Blog</a> </h1>
-        <p class="greeting">Welcome, {{req.session.username}}!</p>
+        {{#if loggedIn}}
+        <p class="greeting">Welcome, {{username}}!</p>
+        {{/if}}
       </div>
       <nav>
         <div class="nav-section">

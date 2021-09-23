@@ -48,7 +48,8 @@ router.get('/', withAuth, (req, res) => {
             
             res.render('dashboard', { 
                 posts, 
-                loggedIn: true 
+                loggedIn: true,
+                username: req.session.username
             });
         })
         .catch(err => {
@@ -98,7 +99,11 @@ router.get('/edit/:id', withAuth, (req, res) => {
             res.redirect('/dashboard')
         }
 
-        res.render('edit-post', { post, loggedIn: true });
+        res.render('edit-post', { 
+            post, 
+            loggedIn: true,
+            username: req.session.username
+        });
     })
     .catch(err => {
         console.log(err);
