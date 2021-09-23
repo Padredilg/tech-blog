@@ -91,6 +91,11 @@ h1.home {
     color: var(--primary-color);
 }
 
+.greeting {
+    color: white;
+    margin: auto 25px;
+}
+
 .fa-home, .fa-user-alt, .fa-sign-out-alt, .fa-sign-in-alt{
     color: white;
 }
@@ -134,6 +139,11 @@ h1.home {
 
 .like-btn{
     margin-left: 5px;
+}
+
+.likes-count{
+    color: white;
+    display: inline;
 }
 /*POSTS ENDS*/
 

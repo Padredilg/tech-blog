@@ -14,7 +14,10 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1 class="home"> <a id="home-button" href="/"># Tech Blog</a> </h1>
+      <div class="separate-items">
+        <h1 class="home"> <a id="home-button" href="/"># Tech Blog</a> </h1>
+        <p class="greeting">Welcome, {{req.session.username}}!</p>
+      </div>
       <nav>
         <div class="nav-section">
           <a class="link-button" href="/"> <i class="fas fa-home"></i> Home</a>

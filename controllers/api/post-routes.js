@@ -97,7 +97,7 @@ router.post('/', withAuth, (req, res) => {
     });
 });
 
-// PUT /api/posts/upvote
+// PUT /api/posts/upvote -- UPLIKE
 //needs to be before /:id, or express will think upvote is an id param
 router.put('/upvote', withAuth, (req, res) => {
     // make sure the session exists first
