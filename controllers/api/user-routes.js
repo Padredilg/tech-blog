@@ -65,6 +65,8 @@ router.post('/', (req, res) => {
         password: req.body.password
     })
     .then(dbUserData => {
+        console.log(dbUserData);
+        
         req.session.save(() => {
             req.session.user_id = dbUserData.id;
             req.session.username = dbUserData.username;
@@ -74,8 +76,18 @@ router.post('/', (req, res) => {
         });
     })
     .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
+        if(err.errors[0].validatorKey === 'len'){
+            res.status(500).send({ message: "Password needs to be at least 4 characters long."})
+        }
+        else if(err.errors[0].validatorKey === 'not_unique'){
+            res.status(500).send({ message: "An account with this email already exists"})
+        }
+        else if(err.errors[0].validatorKey === 'isEmail'){
+            res.status(500).send({ message: "Please check the formatting of your email"})
+        }
+        else{
+            res.status(500).send({ message: 'Failed to Signup'});
+        }
     });
 });
 
