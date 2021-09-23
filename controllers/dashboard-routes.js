@@ -67,6 +67,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
             'content',
             'title',
             'created_at',
+            'user_id',
             [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
         ],
         include: [
@@ -91,6 +92,12 @@ router.get('/edit/:id', withAuth, (req, res) => {
         }
         
         const post = dbPostData.get({ plain: true });
+         
+        //If user isnt the owner, then he/she can't edit post
+        if(post.user_id !== req.session.user_id){
+            res.redirect('/dashboard')
+        }
+
         res.render('edit-post', { post, loggedIn: true });
     })
     .catch(err => {

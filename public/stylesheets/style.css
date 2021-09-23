@@ -1,6 +1,6 @@
 :root{
-    --primary-color: darkcyan;
-    --secondary-color: floralwhite;
+    --primary-color: rgba(0,0,0,.8);
+    --secondary-color: rgba(255,255,255,.75);
 }
 
 *{
@@ -24,7 +24,7 @@ a:hover {
 body{
     font-family: Montserrat, Helvetica, Arial, sans-serif;
     /* background: linear-gradient(45deg, var(--tertiary-color), transparent); */
-    background-image: url("../../assets/images/tech-bg.jpg");
+    background-image: url("/assets/images/tech-bg.jpg");
     background-size: cover;
 }
 
@@ -72,18 +72,23 @@ nav {
     transform: scale(1.1);
 }
 
-#home-button{
+h1.home {
+    margin: 11px 0 10px 4px;
+}
+
+#home-button {
     padding: 0 40px;
     border-radius: 0 75px 0px 45px;
     font-family: 'Train One';
     font-size: 3.25rem;
-    color: var(--primary-color);
+    color: aqua;
+    background: var(--primary-color);
     transition: all .25s ease-in-out;
 }
 
 #home-button:hover{
-    background-color:var(--primary-color);
-    color: white;
+    background-color:white;
+    color: var(--primary-color);
 }
 
 .fa-home, .fa-user-alt, .fa-sign-out-alt, .fa-sign-in-alt{
@@ -136,16 +141,16 @@ nav {
 /*LOGIN STARTS*/
 #forms-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin: 40px 0;
     padding: 30px 50px;
     background: var(--secondary-color);
-    align-items: flex-start;
+    align-items: center;
 }
 
 .individual-form{
-    margin: 0 2%;
+    margin: 0 2% 0 2%;
 }
 
 .card-header {
@@ -155,12 +160,34 @@ nav {
     border-bottom: 1px solid rgba(0,0,0,.125);
     color: white;
 }
+
+.general-button{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.login-buttons a {
+    margin-left: 18px;
+}
+
 /* LOGIN ENDS */
 
 
 /* DASHBOARD BEGINS */
 .section-title {
-    padding: 12px 0 0 15px;
+    margin: 12px 0 0 0;
+    padding: 6px 12px 5px 24px;
+    color: var(--primary-color);
+    border-radius: 0 1px 15px 0;
+    width: fit-content;
+    background: rgba(255, 255, 255, .7);
 }
 
 .new-post-form {
@@ -193,10 +220,12 @@ nav {
     margin: 15px 0 20px 0;
 }
 
-.comment-body{
+.comment-body {
     width: 100%;
     height: 170px;
     margin-bottom: 10px;
+    opacity: .85;
+    border-radius: 5px;
 }
 
 .comment-count{
@@ -218,11 +247,15 @@ nav {
 .comment:nth-child(odd) {
     background-color: var(--secondary-color);
 }
+
+.comment:nth-child(even) {
+    background-color: rgba(179, 215, 255, .85);
+}
   
 .comment .meta {
     font-size: 90%;
     margin-bottom: .5%;
-    opacity: .6;
+    opacity: .8;
 }
 /* COMMENTS ENDS */
 
