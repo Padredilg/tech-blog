@@ -3,8 +3,6 @@
     --secondary-color: floralwhite;
 }
 
-
-
 *{
     padding: 0;
     margin: 0;
@@ -25,7 +23,9 @@ a:hover {
 
 body{
     font-family: Montserrat, Helvetica, Arial, sans-serif;
-
+    /* background: linear-gradient(45deg, var(--tertiary-color), transparent); */
+    background-image: url("../../assets/images/tech-bg.jpg");
+    background-size: cover;
 }
 
 button {

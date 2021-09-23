@@ -40,7 +40,6 @@ router.get('/', (req, res) => {
             else{
                 post.edit = false;
             }
-            console.log(post)
             return post;
         });
 

@@ -4,7 +4,7 @@ const postdata = [
   {
     title: 'Bootstrap is so OP',
     content: 'With bootstrap I can like literally build entirely pretty pages so quickly!! Does anyone even use a framework other than Bootstrap ever?',
-    user_id: 1
+    user_id: 2
   },
   {
     title: 'Insomnia is the best REST API Client',
@@ -14,7 +14,7 @@ const postdata = [
   {
     title: 'Do you use Scratch?',
     content: 'Every coding opportunity on indeed for newcomers to the coding world is to teach kids scracth and I feel like other than teaching kids scratch isnt really that useful',
-    user_id: 1
+    user_id: 2
   },
   {
     title: 'HOLY SHIRTTTTT',
@@ -24,7 +24,7 @@ const postdata = [
   {
     title: 'Incoming Social Media will explode the market!',
     content: "If you haven't heard of \"Campfire\" yet, you are missing out! Its literally the best social media for coding students!! Its just so amazing everything that you can do over there!",
-    user_id: 1
+    user_id: 2
   },
   {
     title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',

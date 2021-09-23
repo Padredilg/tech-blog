@@ -43,7 +43,6 @@ router.get('/', withAuth, (req, res) => {
                 else{
                     post.edit = false;
                 }
-                console.log(post)
                 return post;
             });
             
@@ -92,7 +91,6 @@ router.get('/edit/:id', withAuth, (req, res) => {
         }
         
         const post = dbPostData.get({ plain: true });
-        console.log(post);
         res.render('edit-post', { post, loggedIn: true });
     })
     .catch(err => {
