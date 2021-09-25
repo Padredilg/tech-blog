@@ -10,6 +10,7 @@ This project is intended for users to create an account and post about new techn
 
 ## Usage
 When the user first enter the website, they may click on login over the top right of the website and choose to create an account. Once they are in, they may see every post that other users have posted, create their own, and manage their posts over their dashboard. The user may like or add comments to any posts by clicking on the commment count of a post.</br>
+You may access this application here: https://tech-blog-padredilg.herokuapp.com/</br>
 <img alt="screenshot from website" src="./public/assets/images/tech-ss.png"></img>
 
 ## License
