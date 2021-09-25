@@ -71,6 +71,7 @@ router.get('/signup', (req, res) => {
     res.render('signup');
 });
 
+//edit-post
 router.get('/post/:id', withAuth, (req, res) => {
     Post.findOne({
         where: {
